@@ -16,9 +16,9 @@ public class App {
 
     try(Scanner scn = new Scanner(new File("aoc-1.txt"))) {
       while (scn.hasNextLine()) {
-        String[] split = scn.nextLine().split(" {2}");
+        String[] split = scn.nextLine().split(" {3}");
         listOne.add(Integer.parseInt(split[0]));
-        listTwo.add(Integer.parseInt(split[1].stripLeading()));
+        listTwo.add(Integer.parseInt(split[1]));
       }
     } catch (Exception e) {
       throw new RuntimeException(e);
